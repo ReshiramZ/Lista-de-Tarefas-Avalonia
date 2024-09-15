@@ -1,0 +1,12 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Lista_de_Tarefas_Avalonia.App"
+             RequestedThemeVariant="Dark">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.Styles>
+		<StyleInclude Source="avares://Lista_de_Tarefas_Avalonia/Estilos/EstiloBotao.axaml"/>
+		<StyleInclude Source="avares://Lista_de_Tarefas_Avalonia/Estilos/EstiloDoListBox.axaml"/>
+		<FluentTheme/>
+    </Application.Styles>
+</Application>

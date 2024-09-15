@@ -1,0 +1,32 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="500"
+		Height="500" Width="400"
+        x:Class="Lista_de_Tarefas_Avalonia.SelecionarListaDialogo"
+        Title="SelecionarListaDialogo" CanResize="False">
+
+	<Grid Background="#1c1c21">
+		<ListBox 
+		 SelectionMode="Single"
+         HorizontalAlignment="Center"
+		 Background="#1c1c21"
+		 Height="350" Width="300"
+		 Margin="0 40 0 0"
+         VerticalAlignment="Top"
+		 x:Name="ListBoxListas">
+			<ListBox.Styles>
+				<Style Selector="ListBoxItem">
+					<Setter Property="HorizontalAlignment" Value="Center"/>
+				</Style>
+			</ListBox.Styles>
+		</ListBox>
+		<Button 
+		 Name="BtnTarefaEscolhida" Click="BtnTarefaEscolhida_Click"	
+		 Height="50" Width="140" Content="Carregar" Margin="0 0 0 15"
+		 CornerRadius="10"
+		 HorizontalAlignment="Center" VerticalAlignment="Bottom">
+		</Button>
+	</Grid>
+</Window>

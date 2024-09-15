@@ -1,0 +1,31 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="200"
+		Width="400" Height="200" CanResize="False"
+        x:Class="Lista_de_Tarefas_Avalonia.Janelas.NomeDaListaDialogo"
+        Title="Insira o Nome da Lista..."
+		KeyDown="Window_KeyDown">
+
+	<Grid Background="#1c1c21">
+		<TextBlock
+	     Text="Escolha um nome para a lista"
+		 Foreground="White"
+		 HorizontalAlignment="Center"
+		 Margin="35"/>
+		<TextBox
+		 Name="EntradaDeNome"
+		 Background="#1c1c21"	
+		 MaxLength="30"
+		 Height="25" Width="300" 
+		 BorderBrush="#141333"/>
+		<Button
+		 Name="BtnConfirmarNome" Click="BtnConfirmarNome_Click"
+		 Background="#141333" Foreground="White"
+		 Content="Salvar"
+		 CornerRadius="10"
+		 Height="50" Width="100" Margin="0 0 0 15"
+		 HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+	</Grid>
+</Window>

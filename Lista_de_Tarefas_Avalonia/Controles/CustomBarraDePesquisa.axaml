@@ -1,0 +1,47 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="210" d:DesignHeight="120"
+			 Width="210" Height="120"
+             x:Class="Lista_de_Tarefas_Avalonia.CustomBarraDePesquisa">
+	
+	<Grid>
+		<TextBox 
+		 Name="TextBoxBarraDePesquisa" TextChanged="TextBoxBarraDePesquisa_TextChanged"
+		 Height="40" Width="200"
+		 Watermark="Pesquisar..." BorderThickness="0"
+		 VerticalAlignment="Top"
+		 FontSize="15"
+		 Margin="0 20 0 0" Padding="10 0 50 0"
+		 VerticalContentAlignment="Center"
+		 Background="#1c1c21" Foreground="White"
+		 CornerRadius="10"/>
+		<Button
+		 Name="BtnLimpar" Click="BtnLimpar_Click"
+		 Height="35" Width="40"
+		 VerticalAlignment="Top"
+		 Margin="0 22 7 0"
+		 CornerRadius="10"
+		 Background="#141333"
+		 HorizontalAlignment="Right">
+			<Image Source="avares://Lista_de_Tarefas_Avalonia/Icones/Mop_GoogleFonts.png"/>
+		</Button>
+		<ComboBox
+		 Name="ComboBoxFiltro"
+		 Background="#1c1c21"
+		 BorderThickness="0"
+		 SelectionChanged="ComboBoxFiltro_SelectionChanged"
+		 Margin="0 50 0 0"
+		 SelectedIndex="0"
+		 HorizontalAlignment="Center" VerticalAlignment="Center"
+		 CornerRadius="10"
+		 Width="200">
+			<ComboBoxItem Content="Sem Filtro de Status"/>
+			<ComboBoxItem Content="A Fazer"/>
+			<ComboBoxItem Content="Em Andamento"/>
+			<ComboBoxItem Content="Concluído"/>
+		</ComboBox>
+		
+	</Grid>
+</UserControl>
